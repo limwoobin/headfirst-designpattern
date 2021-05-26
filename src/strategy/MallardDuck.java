@@ -1,4 +1,4 @@
-package ex;
+package strategy;
 
 public class MallardDuck extends Duck {
     public MallardDuck() {

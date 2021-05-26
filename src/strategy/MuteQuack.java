@@ -1,4 +1,4 @@
-package ex;
+package strategy;
 
 public class MuteQuack implements QuackBehavior {
     @Override

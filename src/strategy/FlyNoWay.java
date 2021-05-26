@@ -1,4 +1,4 @@
-package ex;
+package strategy;
 
 public class FlyNoWay implements FlyBehavior {
 
