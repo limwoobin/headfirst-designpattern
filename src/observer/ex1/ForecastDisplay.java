@@ -1,18 +1,18 @@
-package observer;
+package observer.ex1;
 
-public class StatisticsDisplay implements Observer , DisplayElement {
+public class ForecastDisplay implements Observer , DisplayElement {
     private float temperature;
     private float humidity;
     private Subject weatherData;
 
-    public StatisticsDisplay(Subject weatherData) {
+    public ForecastDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
     @Override
     public void display() {
-        System.out.println("Statistic conditions: " + temperature + " F degress and " + humidity + "% humidity");
+        System.out.println("Forecast conditions: " + temperature + " F degress and " + humidity + "% humidity");
     }
 
     @Override
