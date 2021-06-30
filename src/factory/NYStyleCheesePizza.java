@@ -1,13 +1,20 @@
 package factory;
 
-import factory.Pizza;
+import factory.ingredient.PizzaIngredientFactory;
 
 public class NYStyleCheesePizza extends Pizza {
-    public NYStyleCheesePizza() {
-        name = "NY STYLE Sauce and Cheese pizza";
-        dough = "Thin crust dough";
-        sauce = "Marinara Sauce";
+    private final PizzaIngredientFactory ingredientFactory;
+    public NYStyleCheesePizza(PizzaIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
+    }
 
-        toppings.add("Grated Reggiano Cheese");
+    @Override
+    void prepare() {
+        name = "NYStyleCheesePizza";
+        System.out.println("Prepare: " + name);
+        dough = ingredientFactory.createDough();
+        sauce = ingredientFactory.createSauce();
+        pepperoni = ingredientFactory.createPepperoni();
+        cheese = ingredientFactory.createCheese();
     }
 }
