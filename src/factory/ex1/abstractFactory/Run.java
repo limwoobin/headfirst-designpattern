@@ -1,4 +1,4 @@
-package factory.ex1.factory;
+package factory.ex1.abstractFactory;
 
 public class Run {
     public static void main(String[] args) {
