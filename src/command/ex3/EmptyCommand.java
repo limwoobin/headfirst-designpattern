@@ -1,4 +1,4 @@
-package command.ex2;
+package command.ex3;
 
 public class EmptyCommand implements Command {
 
