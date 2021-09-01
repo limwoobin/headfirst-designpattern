@@ -1,9 +1,9 @@
 package command.ex1;
 
-public class RemoteControl {
+public class SimpleRemoteControl {
     Command slot;
 
-    public RemoteControl() {
+    public SimpleRemoteControl() {
 
     }
 
