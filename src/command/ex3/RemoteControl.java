@@ -45,6 +45,7 @@ public class RemoteControl {
             stringBuff.append("[slot ").append(i).append("] ").append(onCommands[i].getClass().getName()).append(" ").append(offCommands[i].getClass().getName()).append("\n");
         }
 
+        stringBuff.append("[slot ").append("undo").append("] ").append(undoCommand.getClass().getName()).append(" ").append("\n");
         return stringBuff.toString();
     }
 }
