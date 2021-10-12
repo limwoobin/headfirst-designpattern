@@ -48,6 +48,13 @@ public class Menu extends MenuComponent {
         Iterator<MenuComponent> iterator = menuComponents.iterator();
         while (iterator.hasNext()) {
             MenuComponent menuComponent = iterator.next();
+
+            if (menuComponent instanceof Menu) {
+                System.out.println("Menu Instance");
+            } else {
+                System.out.println("MenuItem Instance");
+            }
+
             menuComponent.print();
         }
     }
