@@ -1,4 +1,4 @@
-package proxy;
+package proxy.ex1;
 
 import java.net.MalformedURLException;
 import java.rmi.AlreadyBoundException;
